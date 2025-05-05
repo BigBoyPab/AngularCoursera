@@ -1,12 +1,26 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html ng-app="NameCalculator">
   <head>
     <meta charset="utf-8">
     <script src="angular.min.js"></script>
     <script src="app.js"></script>
-    <title>Coursera Test</title>
+    <title>name value Calculator</title>
   </head>
   <body>
-    <h1>Hello Coursera</h1>
+    <h1>Name Value Calculator</h1>
+    <h2>Hello Everyone</h2>
+    This page intends to calculate the value of the name or text given.<br>
+    Enter the text below.<br>
+    <div ng-controller = "CalculateTextValue">
+    <div>
+    <input type="text"
+    ng-model="InpText"
+    ng-keyup="outValue()">
+  </div>
+  <div>
+    The value of text is:
+    {{textValue}}
+  </div>
+  </div>
   </body>
 </html>
