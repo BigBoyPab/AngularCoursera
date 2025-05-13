@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html ng-app="UpperCaseConverter">
+  <head>
+    <meta charset="utf-8">
+    <script src ="angular.min.js"></script>
+    <script src="upper.js"></script>
+    <title>Change to upper case</title>
+  </head>
+  <body>
+    Enter a string into text box.<br>
+    <div ng-controller="toUpper">
+      <input type="text" ng-model="input" ng-blur="up();">
+    </div>
+  </body>
+</html>
