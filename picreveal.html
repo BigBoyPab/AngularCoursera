@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html ng-app="animate1">
+  <head>
+    <script src = "angular.min.js"></script>
+    <script src = "animate.js"></script>
+    <meta charset="utf-8">
+    <title>animate</title>
+  </head>
+  <body >
+
+    Hello <br>
+    Magic animation just with a click of a button. <br>
+    <div ng-controller="animated">
+    <image ng-src = "images/a_{{PicType}}.jpg">
+    <button ng-click="animation()"> Click to animate</button>
+    </div>
+  </body>
+</html>
