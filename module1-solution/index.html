@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html ng-app="Spliter">
+  <head>
+    <meta charset="utf-8">
+    <script src="angular.min.js"></script>
+    <script src="spliter.js"></script>
+    <title>Lunch Box</title>
+  </head>
+  <body>
+    Enter the Lunchbox items in the textbox: <br>
+    <div ng-controller="splitting">
+    <input type = "text" ng-model="inp">
+    <button type="button" ng-click="verify()">Check If Too Much</button><br>
+    {{result}}
+    </div>
+  </body>
+</html>
